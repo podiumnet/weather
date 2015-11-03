@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="main-container">
+      <header>
+        <div id="close">&#10006;</div>
+        <div class="maininfo">
+          Weather
+          <input type="text" class="place" id="place" value="Toronto">
+          <span class="place" id="placefull">Toronto, ON, Canada</span>
+        </div>
+      </header>
+      <div class="body">
+        <div class="tempzone">
+          <div id="temperature">??</div>
+          <div id="tempformat"><b>C</b>/F</div>
+        </div>
+        <div class="scrollabledata">
+          <div class="extra">
+            <b id="conditions">??????</b><br/>
+            <b>High:</b> <span id="high">??</span><br/>
+            <b>Low:</b> <span id="low">??</span><br/>
+            <b>Wind Chill:</b> <span id="chill">??</span><br/>
+          </div>
+          <div class="extra">
+            <b>Sunrise:</b> <span id="sunrise">??:?? ??</span><br/>
+            <b>Sunset:</b> <span id="sunset">??:?? ??</span><br/>
+            <b>Humidity:</b> <span id="humidity">??</span>%<br/>
+            <b>Wind Speed:</b> <span id="speed">?? ???</span><br/>
+          </div>
+        </div>
+      </div>
+      <div id="about" onclick="window.open('about.html')">About</div>
+    </div>
+    <script>
+      require("coffee-script/register");
+      require("./essential");
+      require("./app");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>About Weather</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="main-container">
+      <header>
+        <div id="close">&#10006;</div>
+        <div class="maininfo">
+          <span class="title-nowrap">About Weather</span>
+          <span class="place" id="placefull">by Podium</span>
+        </div>
+      </header>
+      <div class="body extra-spaced">
+        Podium weather app was made by <a href="http://pdum.xyz">podium</a> for
+        your use. It was programmed using modern web technologies and powered by
+        <a href="http://electron.atom.io">electron</a>.
+      </div>
+    </div>
+    <script>
+      require("coffee-script/register");
+      require("./essential");
+    </script>
+  </body>
+</html>
