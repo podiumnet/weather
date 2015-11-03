@@ -1,5 +1,6 @@
 # Weather
 ![(Screenshot)](http://www.pdum.xyz/images/Weather.png)
+
 This is the podium weather app.
 
 ## Installation
