@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Podium Weather App",
   "main": "index.js",
+  "bin": {
+    "pweather": "./startscript.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/podiumnet/pweather.git"
