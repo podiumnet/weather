@@ -85,12 +85,3 @@ document.querySelector("#tempformat").onclick = ->
   unit = if unit is "c" then "f" else "c"
   update()
   save()
-remote = require 'remote'
-BrowserWindow = remote.require 'browser-window'
-document.querySelector("#about").onclick = ->
-  new BrowserWindow(
-    width: 600
-    height: 150
-    frame: false
-    transparent: true
-  ).loadUrl "file://#{__dirname}/about.html"

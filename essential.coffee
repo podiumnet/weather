@@ -8,3 +8,12 @@ aTags = document.querySelectorAll "a"
 for i in aTags
   i.setAttribute "onclick", "require('shell').openExternal('#{i.href}')"
   i.href = "#"
+remote = require 'remote'
+BrowserWindow = remote.require 'browser-window'
+document.querySelector("#about").onclick = ->
+  new BrowserWindow(
+    width: 600
+    height: 150
+    frame: false
+    transparent: true
+  ).loadUrl "file://#{__dirname}/about.html"
